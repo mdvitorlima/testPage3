@@ -3,7 +3,7 @@
     "name": "My Sample PWA",
     "short_name": "SamplePWA",
     "description": "A sample PWA for testing purposes",
-    "start_url": "/",
+    "start_url": "/testPage3",
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
     "orientation": "any",
