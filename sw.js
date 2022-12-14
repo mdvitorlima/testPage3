@@ -1,10 +1,19 @@
 const CACHE_NAME = `my-sample-app-cache-v1`;
 
+var GHPATH = '/github-page-pwa';
+
+var URLS = [    
+  `${GHPATH}/`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/icon512.png`,
+]
+
+
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
-    cache.addAll(['/']);
+    cache.addAll(URLS);
   })());
 });
 
